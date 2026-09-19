@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 // NOVAS EXTENSÕES:
 import { DataService, Item } from '../services/data.service';
 import { Data, Router } from '@angular/router';
-import { AlertController } from '@ionic/angular/lazy';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
