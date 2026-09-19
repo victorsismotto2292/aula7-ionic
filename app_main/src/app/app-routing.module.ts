@@ -10,10 +10,15 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },  {
+  },
+  {
     path: 'page-detail',
     loadChildren: () => import('./pages/page-detail/page-detail.module').then( m => m.PageDetailPageModule)
   },
+  {
+    path: 'item-detail/:id', // Rota para editar item existente
+    loadChildren: () => import('./pages/page-detail/page-detail.module').then( m => m.PageDetailPageModule )
+  }
 
 ];
 
