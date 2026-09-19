@@ -11,7 +11,7 @@ import { LoadingController, ToastController } from '@ionic/angular';
   styleUrls: ['./page-detail.page.scss'],
   standalone: false,
 })
-export class ItemDetailPage implements OnInit {
+export class PageDetailPage implements OnInit {
 
   // Declarando uma propriedade 'item' do tipo Item com valores nulos.
   // Será usada para vincular os dados do formulário (nome e descrição).
