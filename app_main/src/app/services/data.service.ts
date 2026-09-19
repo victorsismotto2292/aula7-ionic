@@ -56,4 +56,18 @@ export class DataService{
     }
 
     // Atualizando um item existente
+    updateItem(item: Item){
+        // Referência para um documento específico
+        const itemDocRef = doc(this.firestore, `items/${item.id}`);
+        // Atualizando documento
+        return updateDoc(itemDocRef, { name: item.name, description: item.description });
+    }
+
+    // Deletando um item específico pelo id
+    deleteItem(id: string){
+        // Referência para um documento específico
+        const itemDocRef = doc(this.firestore, `items/${id}`);
+        // Deletando documento
+        return deleteDoc(itemDocRef);
+    }
 }
